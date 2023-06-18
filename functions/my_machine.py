@@ -1,14 +1,14 @@
 import platform
 
 
-def my_machine_os(my_machine: str):
+def my_machine_os(not_used: str):
     """
     Get the operating system of my machine
 
     Parameters
     ----------
-    my_machine : string
-        my machine string
+    not_used : string
+        parameter not used
 
     Returns
     -------
@@ -17,6 +17,8 @@ def my_machine_os(my_machine: str):
     """
 
     system = platform.system()
+    print(f"My system is: {system}")
+
     if system == "Windows":
         return "Windows"
     elif system == "Darwin":
